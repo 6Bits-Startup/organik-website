@@ -14,7 +14,7 @@ public/
   assets/
     styles/           styles.css: sistema de diseño, estilos, animaciones y responsive
     scripts/          main.js (animaciones, interacciones y cambio de idioma), plans.js (selector de planes por segmento) y translations.js (traducciones ES / EN)
-    images/           favicon.svg y team/ (fotos del equipo; ver team/LEEME.md para reemplazar los placeholders)
+    images/           favicon.svg y team/ (fotos del equipo; ver team/TEAM MEMBERS.md para reemplazar los placeholders)
     videos/           videos del sitio (vacía por ahora)
     fonts/            fuentes locales (vacía por ahora; las fuentes vienen de Google Fonts)
 ```
