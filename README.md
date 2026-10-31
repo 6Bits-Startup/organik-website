@@ -5,21 +5,27 @@ Está construida con HTML, CSS y JavaScript nativo: sin frameworks, sin librerí
 
 ## Estructura
 
-- `index.html`: landing principal (hero, funciones, video del equipo, video del producto, equipo, testimonios, planes por segmento y llamada final al login).
-- `plans.js`: selector de planes por segmento (minimarkets / proveedores).
-- `terminos.html` y `privacidad.html`: páginas legales.
-- `404.html`: página de error con la identidad de la marca.
-- `styles.css`: sistema de diseño, estilos, animaciones y responsive.
-- `main.js`: animaciones, interacciones y cambio de idioma.
-- `public/`: favicon y recursos estáticos.
-- `public/team/`: fotos del equipo (ver `public/team/LEEME.md` para reemplazar los placeholders).
-- `public/i18n/translations.js`: traducciones ES / EN de todo el sitio.
+```
+public/
+  index.html          landing principal (hero, funciones, video del equipo, video del producto, equipo, testimonios, planes por segmento y llamada final al login)
+  terminos.html       términos y condiciones
+  privacidad.html     política de privacidad
+  404.html            página de error con la identidad de la marca
+  assets/
+    styles/           styles.css: sistema de diseño, estilos, animaciones y responsive
+    scripts/          main.js (animaciones, interacciones y cambio de idioma), plans.js (selector de planes por segmento) y translations.js (traducciones ES / EN)
+    images/           favicon.svg y team/ (fotos del equipo; ver team/LEEME.md para reemplazar los placeholders)
+    videos/           videos del sitio (vacía por ahora)
+    fonts/            fuentes locales (vacía por ahora; las fuentes vienen de Google Fonts)
+```
+
+Firebase Hosting publica solo la carpeta `public/` (ver `firebase.json`).
 
 ## Ejecutar localmente
 
-Abre `index.html` directamente en el navegador.
+Abre `public/index.html` directamente en el navegador.
 
-Si prefieres servirla por HTTP, usa cualquier servidor estático apuntando a la raíz del proyecto.
+Si prefieres servirla por HTTP, usa cualquier servidor estático apuntando a la carpeta `public/`.
 
 ## Características
 
@@ -27,7 +33,6 @@ Si prefieres servirla por HTTP, usa cualquier servidor estático apuntando a la 
 - Animaciones con CSS, Web Animations API y `IntersectionObserver`.
 - Respeta `prefers-reduced-motion`.
 - Idioma ES / EN persistente entre páginas.
-- Formulario con validación en línea.
 
 ## Flujo de trabajo
 

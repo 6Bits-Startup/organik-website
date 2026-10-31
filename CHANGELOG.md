@@ -5,6 +5,16 @@ Todos los cambios relevantes de este proyecto se documentan en este archivo.
 El formato sigue [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y el proyecto usa
 [Versionado Semántico](https://semver.org/lang/es/).
 
+## [Unreleased]
+
+### Changed
+
+- Estructura de carpetas reorganizada según la guía del profesor: las páginas HTML quedan en la raíz de `public/` y los recursos en `public/assets/` (`styles/`, `scripts/`, `images/`, `videos/` y `fonts/`). Firebase Hosting ahora publica solo `public/`.
+
+### Removed
+
+- Mención al formulario de contacto en el README, que ya no existe.
+
 ## [2.2.1] - 2026-10-08
 
 ### Removed
