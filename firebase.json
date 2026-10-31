@@ -1,16 +1,11 @@
 {
   "hosting": {
     "site": "organik-d6e58",
-    "public": ".",
+    "public": "public",
     "ignore": [
-      "firebase.json",
       "**/.*",
-      ".git/**",
-      "**/.git/**",
       "**/node_modules/**",
-      "**/*.md",
-      ".editorconfig",
-      ".prettierrc"
+      "**/*.md"
     ],
     "redirects": [
       {
