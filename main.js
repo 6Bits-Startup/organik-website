@@ -484,7 +484,8 @@
                 bez.style.clipPath = `inset(${(16 * k).toFixed(2)}% ${(10 * k).toFixed(2)}% ${(16 * k).toFixed(2)}% ${(10 * k).toFixed(2)}% round 2rem)`;
                 bez.style.scale = (0.9 + 0.1 * p).toFixed(3);
                 const q = clamp((vh - r.top) / (vh + r.height));
-                $('.vid__art', card).style.scale = (1.35 - 0.35 * q).toFixed(3);
+                const art = $('.vid__art', card);
+                if (art) art.style.scale = (1.35 - 0.35 * q).toFixed(3);
             });
             par.forEach(el => {
                 const r = el.getBoundingClientRect();
